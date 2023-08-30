@@ -1,9 +1,9 @@
-package com.example.myapp1
+package com.example.myappsatu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.myapp1.databinding.ActivityMainBinding
+import com.example.myappSATU.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

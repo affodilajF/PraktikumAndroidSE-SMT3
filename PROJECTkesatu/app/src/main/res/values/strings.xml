@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">myappSATU</string>
+    <string name="count"> Count </string>
+    <string name="toast"> Toast </string>
+</resources>
