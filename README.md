@@ -4,7 +4,7 @@ Project1 : Pertemuan 2, Linear Layout, Tugas BMI Count
 
 Project2 : Pertemuan 3, Relative Layout, Tugas Calculator, (commit "kalkulator")
 
-Project2 : Pertemuan 3, Constraint Layout, (commit "PERTEMUAN 4 : CONSTRAINT LAYOUT")
+Project2 : Pertemuan 4, Constraint Layout, (commit "PERTEMUAN 4 : CONSTRAINT LAYOUT")
 
 
 
