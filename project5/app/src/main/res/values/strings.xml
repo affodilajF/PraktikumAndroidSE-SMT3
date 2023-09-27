@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <array name="listpresensi">
+        <item> Hadir tepat waktu </item>
+        <item> Sakit </item>
+        <item> Terlambat </item>
+        <item> Izin </item>
+    </array>
 </resources>
