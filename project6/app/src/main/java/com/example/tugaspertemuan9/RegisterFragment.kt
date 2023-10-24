@@ -43,8 +43,8 @@ class RegisterFragment : Fragment() {
 
         with(binding) {
             btnRegister.setOnClickListener {
-                val intent = Intent(context, WelcomeActivity::class.java)
-                startActivity(intent)
+                (activity as MainActivity).viewPager2.setCurrentItem(1, true)
+
             }
             askLogin.setOnClickListener {
                 (activity as MainActivity).viewPager2.setCurrentItem(1, true)

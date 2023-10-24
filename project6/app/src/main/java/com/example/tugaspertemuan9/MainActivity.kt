@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             viewPager2 = viewPager
 
             viewPager.adapter = TabAdapter(supportFragmentManager, this@MainActivity.lifecycle)
+
             mediator = TabLayoutMediator(tabLayout, viewPager)
             { tab, position->
                 when(position){
