@@ -10,7 +10,7 @@ Project4 : Pertemuan 5, Intent, (commit "PERTEMUAN 5 : INTENT")
 
 Project5 : Pertemuan 6, Date Time Picker Spinner, (commit "PERTEMUAN 6 : DATETIMEPICKER SPINNER")
 
-Project6 : Pertemuan 9, Menu Options & Page Layout
+Project6 : Pertemuan 8, Menu Options & Page Layout
 
 
 
