@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderticketFragment"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+    <EditText
+        android:id="@+id/edit_txt_jenisticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Ticket"
+        android:background="@drawable/edittextstyle"
+        android:padding="15dp"
+        android:longClickable="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:textIsSelectable="false"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Ticket"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonstyle"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

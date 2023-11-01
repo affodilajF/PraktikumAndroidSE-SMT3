@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.Tugaspertemuan9ya" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+
+<!--    <style name="Base.Theme.Tugaspertemuan9ya" parent="Theme.Material3.DayNight">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="Base.Theme.Tugaspertemuan9ya" parent="Theme.AppCompat.DayNight">
+<!--        <item name="colorPrimary">#525BFF</item>-->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Base.Theme.Tugaspertemuan9ya2" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">#525BFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerStyle</item>
+        <!-- Customize your light theme here. -->
+        <!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:textColor"> @color/black</item>
+
+    </style>
+
+    <style name="Theme.Tugaspertemuan9ya" parent="Base.Theme.Tugaspertemuan9ya" />
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tugaspertemuan9ya.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.tugaspertemuan9ya.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.example.tugaspertemuan9ya.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_orderticketFragment"
+            app:destination="@id/orderticketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderticketFragment"
+        android:name="com.example.tugaspertemuan9ya.OrderticketFragment"
+        android:label="fragment_orderticket"
+        tools:layout="@layout/fragment_orderticket" >
+        <action
+            android:id="@+id/action_orderticketFragment_to_chooseorderticketFragment"
+            app:destination="@id/chooseorderticketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseorderticketFragment"
+        android:name="com.example.tugaspertemuan9ya.ChooseorderticketFragment"
+        android:label="fragment_chooseorderticket"
+        tools:layout="@layout/fragment_chooseorderticket" />
+</navigation>
