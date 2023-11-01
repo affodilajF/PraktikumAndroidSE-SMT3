@@ -21,6 +21,8 @@
         android:clickable="false"
         android:focusable="false"
         android:textIsSelectable="false"
+        android:textColor="@color/black"
+
         />
 
     <Button
