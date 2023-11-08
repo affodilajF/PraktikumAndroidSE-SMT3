@@ -77,10 +77,27 @@ class ChooseorderticketFragment : Fragment() {
             btnBuy2.setOnClickListener(){
                 findNavController().apply {
                     previousBackStackEntry?.savedStateHandle?.
-                    set("address", ticketdipilih)
-
+                    set("ticketdipilih", ticketdipilih)
                 }.navigateUp()
             }
+
+
+
+//            lambda expression
+            btnBuy2.setOnClickListener(){
+            }
+
+//            without lambda expression
+            btnBuy2.setOnClickListener( object : View.OnClickListener {
+                override fun onClick(v: View?) {
+
+                }
+            }
+
+
+
+
+            )
 
 
 

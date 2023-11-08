@@ -13,3 +13,5 @@ Project5 : Pertemuan 6, Date Time Picker Spinner, (commit "PERTEMUAN 6 : DATETIM
 Project6 : Pertemuan 8, Menu Options & Page Layout
 
 Project7 : Pertemuan 9, Bottom Navigation
+
+Project8 : Pertemuan 10, ReView FruitBox

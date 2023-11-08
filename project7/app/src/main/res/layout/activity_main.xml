@@ -24,6 +24,7 @@
         android:foregroundGravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/button_navigation_menu"
-        android:background="@color/white"/>
+        android:background="@color/white"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

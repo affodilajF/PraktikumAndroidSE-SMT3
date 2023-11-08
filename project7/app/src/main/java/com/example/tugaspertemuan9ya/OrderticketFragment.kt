@@ -34,7 +34,7 @@ class OrderticketFragment : Fragment() {
 
             findNavController().currentBackStackEntry?.savedStateHandle?.let{
                     handle ->
-                handle.getLiveData<String>("address").
+                handle.getLiveData<String>("ticketdipilih").
                 observe(viewLifecycleOwner){
                         res ->
                     editTxtJenisticket.setText(res)
