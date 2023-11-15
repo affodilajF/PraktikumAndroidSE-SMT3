@@ -15,3 +15,5 @@ Project6 : Pertemuan 8, Menu Options & Page Layout
 Project7 : Pertemuan 9, Bottom Navigation
 
 Project8 : Pertemuan 10, ReView FruitBox
+
+Project9 : Pertemuan 11, Retrofit
