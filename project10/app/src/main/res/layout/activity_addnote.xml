@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddnoteActivity"
+    android:padding="35dp">
+
+
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:textColor="#303030"
+            android:id="@+id/editText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnok" />
+
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt_status"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#6437A0"
+            android:text="STATUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_title" />
+
+        <Spinner
+            android:background="#DF8D8D"
+            android:id="@+id/spinner_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_title" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_edttxt_catatan"
+            android:padding="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/textinputfieldstyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_title">
+
+            <EditText
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:id="@+id/edttxt_catatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Catatan..."
+                android:background="#E2C5F3"/>
+        </LinearLayout>
+
+        <TextView
+            android:clickable="true"
+            android:textColor="#6B19B1"
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnbck"
+            android:clickable="true"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_del"
+            android:background="@drawable/recviewstyle"
+            android:textColor="#777777"
+            android:text="Delete"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_edttxt_catatan" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

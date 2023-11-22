@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeeActivity"
+    android:background="#eef2f5">
+
+
+
+
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/btn_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/buttonstyle"
+        android:text="+"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#6437A0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note App"
+            android:textColor="@color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- SearchView -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/searchstyle"
+            app:iconifiedByDefault="true"
+            app:queryHint="Cari...." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                    android:background="@drawable/allstyle"
+                    android:id="@+id/btn_all"
+                    android:layout_marginRight="8dp"
+                    android:text="All"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:id="@+id/btn_important"
+                android:layout_marginRight="8dp"
+                android:text="Important"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/importantstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_essential"
+                android:layout_marginRight="8dp"
+                android:text="Essential"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/essentialstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_normal"
+                android:text="Normal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:background="@drawable/normalstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_jumlahnotes"
+            android:paddingLeft="5dp"
+            android:textColor="#A8A8A8"
+            android:text="24 Notes"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_marginTop="15dp"
+            android:id="@+id/rv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerPadding="40dp"
+            tools:itemCount="10"
+            tools:listitem="@layout/note_item"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

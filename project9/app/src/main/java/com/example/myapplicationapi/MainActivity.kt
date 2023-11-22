@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
                 val meals = arrayListOf<String>()
                 val instc = arrayListOf<String>()
-                val categories = arrayListOf<String>()
 
                 for (data in response.body()?.data ?: arrayListOf()) {
                     meals.add(data.meal)

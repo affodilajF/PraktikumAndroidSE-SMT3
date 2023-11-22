@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,35 +15,38 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#D38888"
-        app:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-    </androidx.appcompat.widget.Toolbar>
+        app:titleTextColor="@android:color/white"></androidx.appcompat.widget.Toolbar>
 
 
     <LinearLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20dp"
-        android:layout_marginBottom="20dp">
+        android:padding="20dp">
 
         <!-- SearchView -->
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:queryHint="Cari...."
-            app:iconifiedByDefault="true"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/searchstyle"
-            android:layout_marginBottom="20dp" />
+            app:iconifiedByDefault="true"
+            app:queryHint="Cari...." />
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
-            app:dividerPadding="40dp"
+            android:id="@+id/rv_fruits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_fruits"
+            app:dividerPadding="40dp"
             tools:itemCount="10"
             tools:listitem="@layout/item_fruit" />
 
@@ -70,8 +73,20 @@
 
 
 
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/btn_oke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oke"
+        android:text="OKE"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
