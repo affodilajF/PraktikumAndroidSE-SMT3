@@ -21,9 +21,11 @@ data class Note(
     @ColumnInfo(name="description")
     val desc : String,
 
+//    tidak digunakan, semuanya bernilai null.
     @ColumnInfo(name="category")
     val category : String,
 
     @ColumnInfo(name="status")
     val status : String,
+
     ) : Serializable

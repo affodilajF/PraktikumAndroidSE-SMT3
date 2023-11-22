@@ -30,7 +30,6 @@ interface NoteDAO {
     @get:Query("SELECT * FROM note_table WHERE status = 'Normal' ORDER BY id DESC")
     val normalNotes : LiveData<List<Note>>
 
-
     @get:Query("SELECT COUNT(*) FROM note_table")
     val getCountOfAllNotes : LiveData<Int>
 

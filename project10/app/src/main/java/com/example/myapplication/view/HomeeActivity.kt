@@ -20,8 +20,10 @@ import androidx.appcompat.widget.SearchView
 class HomeeActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityHomeeBinding
+
     private lateinit var mNotesDao : NoteDAO
     private lateinit var executorService : ExecutorService
+
     private lateinit var adapterNote : NoteAdapter
     private var allNotesLiveData : LiveData<List<Note>>? = null
 
@@ -42,6 +44,7 @@ class HomeeActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
+
         with(binding){
             rvNote.apply{
                 adapter = adapterNote
