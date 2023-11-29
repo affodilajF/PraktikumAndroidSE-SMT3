@@ -15,6 +15,8 @@ abstract class NoteRoomDatabase : RoomDatabase() {
 
     abstract fun noteDao() : NoteDAO?
 
+
+
     companion object {
         @Volatile
         private var INSTANCE : NoteRoomDatabase ? = null
