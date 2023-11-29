@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <array name="status">
+        <item>Important</item>
+        <item>Essential</item>
+        <item>Normal</item>
+    </array>
+
+
+</resources>
